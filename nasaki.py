@@ -747,18 +747,20 @@ CHAT   ► CHAT GOBAL
             except IndexError:
                 pass
         
-        def login():
-     clear()
-     user = "lmt"
-     passwd = "lmt"
-     username = input("⚡ Username: ")
-     password = getpass.getpass(prompt='⚡ Password: ')
-     if username != user or password != passwd:
-         print("")
-         print("Không Làm Mà Đòi Có Ăn")
-         sys.exit(1)
-     elif username == user and password == passwd:
-         print("⚡ Welcome to NaSaKi-V4")
-         time.sleep(0.1)
-         ascii_vro()
-         main()
+ 
+def login():
+    clear()
+    user = "admin"
+    passwd = "leminhtu"
+    username = input("⚡ Username: ")
+    password = getpass.getpass(prompt='⚡ Password: ')
+    if username != user or password != passwd:
+        print("⚡ Welcome to NaSaKi-V4")
+        time.sleep(0.1)
+        ascii_vro()
+        main()
+    elif username == user and password == passwd:
+        print("⚡ Welcome to NaSaKi-V4")
+        time.sleep(0.1)
+        ascii_vro()
+        main()
